@@ -1,0 +1,31 @@
+.cards__list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.no-vacancies-message {
+  text-align: center;
+  margin-top: 43%;
+}
+
+@media (max-width: 1140px) {
+  .no-vacancies-message {
+      position: relative;
+      margin-top: 63%;
+  }
+}
+
+@media (max-width: 940px) {
+  .cards__list {
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 10px;
+  }
+
+  .no-vacancies-message {
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-top: auto;
+  }
+}
